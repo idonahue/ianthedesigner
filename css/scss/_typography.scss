@@ -8,6 +8,10 @@
     font-style: normal;
 }
 
+// Variables
+$font-body:     'Nunito', sans-serif;
+$font-header:   'Tiempo';
+
 
 // Typography
 
@@ -35,4 +39,8 @@ body, h1, h2, h3, h4, h5, h6, p, img, br   {
   &::selection {
     background-color: $primary;
   }
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Tiempo';
 }

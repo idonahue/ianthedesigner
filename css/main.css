@@ -102,22 +102,27 @@ p a:hover {
 body::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, img::selection, br::selection {
   background-color: #F7E841; }
 
+h1, h2, h3, h4, h5 {
+  font-family: 'Tiempo'; }
+
 body {
   color: #38464A;
   background: #F5FAFC;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 30px;
   -webkit-font-smoothing: antialiased; }
 
+.container {
+  margin-left: 32px;
+  margin-right: 32px; }
+
 .contents-container {
   min-height: 100vh;
   display: flex;
-  justify-content: space-around;
-  margin-left: 32px;
-  margin-right: 32px; }
+  justify-content: space-around; }
 
 .stretch-height {
   display: flex;
@@ -139,7 +144,7 @@ body {
     margin-top: 20px; }
 
 .highlight {
-  font-family: 'Tiempo';
+  font-family: "Tiempo";
   font-weight: bold;
   font-size: 45px;
   line-height: 50px;
@@ -220,6 +225,48 @@ body {
   animation-name: wabble;
   animation-iteration-count: infinite;
   animation-duration: 8s; }
+
+.job {
+  max-width: 698px;
+  border-top: 1px solid #CCD7DE;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 32px;
+  padding-bottom: 32px; }
+  .job h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    line-height: 1; }
+  .job h4 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #38464A;
+    font-family: "Nunito", sans-serif;
+    font-size: 23px;
+    line-height: 34px; }
+    .job h4 a {
+      text-decoration: none; }
+  .job p {
+    margin-top: 8px;
+    margin-bottom: 0;
+    color: #38464A;
+    font-size: 16px; }
+
+.projects {
+  display: flex; }
+  .projects .project {
+    background-color: #F7E841;
+    height: 30px;
+    width: 30px;
+    margin-right: 8px;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none; }
+    .projects .project:hover {
+      color: #F7E841;
+      background-color: #38464A; }
 
 @keyframes wabble {
   0% {
