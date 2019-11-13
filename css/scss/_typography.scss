@@ -20,7 +20,15 @@ a {
     color: $primary;
     background-color: $black;
   }
+  &:hover {
+    color: $black;
+    background-color: $primary;
+  }
+}
 
+p a:hover {
+    color: $primary;
+    background-color: $black;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, img, br   {

@@ -64,13 +64,15 @@ body {
     text-decoration: none;
     transition: 0.3s;
     color: #38464A;
+    &:hover {
+      text-decoration: underline;
+      transition: 0.3s;
+      color: $primary;
+      background-color: $black;
+
+    }
   }
 }
-.highlight a:hover {
-  text-decoration: underline;
-  transition: 0.3s;
-}
-
 
 .hero-container {
   height: 100%;
@@ -135,8 +137,8 @@ body {
     height: 50px;
     position: relative;
     top: 0;
-    // top: 10px;
-    // transition: 1s;
+    padding: 5px;
+    border-radius: 8px;
     &:hover {
       animation-name: hover-wabble;
       animation-iteration-count: infinite;

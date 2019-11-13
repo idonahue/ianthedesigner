@@ -91,6 +91,13 @@ a {
   a::selection {
     color: #F7E841;
     background-color: #38464A; }
+  a:hover {
+    color: #38464A;
+    background-color: #F7E841; }
+
+p a:hover {
+  color: #F7E841;
+  background-color: #38464A; }
 
 body::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, img::selection, br::selection {
   background-color: #F7E841; }
@@ -141,10 +148,11 @@ body {
     text-decoration: none;
     transition: 0.3s;
     color: #38464A; }
-
-.highlight a:hover {
-  text-decoration: underline;
-  transition: 0.3s; }
+    .highlight a:hover {
+      text-decoration: underline;
+      transition: 0.3s;
+      color: #F7E841;
+      background-color: #38464A; }
 
 .hero-container {
   height: 100%;
@@ -196,7 +204,9 @@ body {
   .social a {
     height: 50px;
     position: relative;
-    top: 0; }
+    top: 0;
+    padding: 5px;
+    border-radius: 8px; }
     .social a:hover {
       animation-name: hover-wabble;
       animation-iteration-count: infinite;
