@@ -22,6 +22,18 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.contents-container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.stretch-height {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .top-nav {
   display: flex;
   justify-content: flex-end;
@@ -55,29 +67,24 @@ body {
   transition: 0.3s;
 }
 
-.contents-container {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
+
 
 
 .hero-container {
   // height: 100vh;
+  width: 698px;
 }
 .hero {
-  width: 698px;
-  height: 612px;
+  width: 100%;
+  height: 512px;
 }
 
 .artwork {
   position: relative;
-  // top: 110px;
   left: -50px;
   width: 332px;
   height: 280px;
-  background-color: #F7E841;
+  background-color: $primary;
   border-radius: $gu-1;
   box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.15);
 }
@@ -87,13 +94,9 @@ body {
     top: -271px;
 }
 
-// .dave {
-//   color: #0b9a40;
-// }
-
-// .ubermedia {
-//   color: #1c46f2;
-// }
+.about {
+  line-height: 34px;
+}
 
 
 .social-links-container {
@@ -101,32 +104,43 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li {
+      margin: 0;
+      padding: 0;
+    }
+  }
 }
 
-.social-links-container ul {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
 
-.social-links-container ul li {
-  margin: 0;
-  padding: 0;
-}
 .social {
   width: 30px;
-  height: 30px;
+  height: 40px;
   background-position: center center;
   background-repeat: no-repeat;
+  a {
+    height: 50px;
+    position: relative;
+    top: 0;
+    // top: 10px;
+    // transition: 1s;
+    &:hover {
+      animation-name: hover-wabble;
+      animation-iteration-count: infinite;
+      animation-duration: 2s;
+      transition-timing-function: ease-in;
+    }
+  }
+  img {
+    height: 100%;
+    width: 100%;
+  }
 }
-
-.social img {
-  height: 100%;
-  width: 100%;
-}
-
 
 .artwork {
   animation-name: wabble;
@@ -137,7 +151,13 @@ body {
 // Animation 
 
 @keyframes wabble {
-    0%    {  transform:translate(0, 10px); }
-    50%   {  transform:translate(0, 0); }
-    100%  {  transform:translate(0, 10px); }
+    0%    {  transform: translate(0, 10px); }
+    50%   {  transform: translate(0, 0);    }
+    100%  {  transform: translate(0, 10px); }
+}
+
+@keyframes hover-wabble {
+    0%    {  top: 0;      }
+    50%   {  top: -10px;   }
+    100%  {  top: 0;      }
 }
