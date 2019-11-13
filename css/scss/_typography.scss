@@ -1,0 +1,19 @@
+// Fonts 
+
+@font-face {
+    font-family: 'Tiempo';
+    src: url('tiempo_headline_regular-webfont.woff2') format('woff2'),
+         url('tiempo_headline_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+// Typography
+
+a {
+  color: $black;
+  &:visited {
+    color: $black;
+  }
+}

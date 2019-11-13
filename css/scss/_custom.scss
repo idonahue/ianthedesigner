@@ -1,26 +1,54 @@
+$gu-1:  8px;
+$gu-2:  16px;
+$gu-3:  24px;
+$gu-4:  32px;
+$gu-5:  40px;
+$gu-6:  48px;
+$gu-7:  56px;
+$gu-8:  64px;
+$gu-9:  72px;
+$gu-10: 80px;
+
+
 body {
-  color: #38464A;
-  /*background: #E3E3E3;*/
+  color: $black;
+  // background: #E3E3E3;
   background: #F5FAFC;
-  font-family: Larsseit;
+  font-family: 'Nunito', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
+  font-size: $gu-3;
   line-height: 30px;
+  -webkit-font-smoothing: antialiased;
+}
 
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+}
 
+.hero-text {
+  margin-bottom: 83px;
+  .greeting {
+    margin-bottom: 20px;
+    font-size: $gu-4;
+  }
+  .highlight {
+    margin-top: 20px;
+  }
 }
 
 .highlight {
+  font-family: 'Tiempo';
   font-weight: bold;
   font-size: 45px;
-  line-height: 54px;
-  margin-top: 30px;
-}
-.highlight a {
-  text-decoration: none;
-  transition: 0.3s;
-  color: #38464A;
+  line-height: 50px;
+  margin-top: $gu-3;
+  a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: #38464A;
+  }
 }
 .highlight a:hover {
   text-decoration: underline;
@@ -28,6 +56,7 @@ body {
 }
 
 .contents-container {
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -35,36 +64,36 @@ body {
 
 
 .hero-container {
-  height: 100vh;
+  // height: 100vh;
 }
 .hero {
   width: 698px;
-  height: 752px;
+  height: 612px;
 }
 
 .artwork {
-    position: relative;
-    top: 110px;
-    left: -50px;
-    width: 332px;
-    height: 280px;
-    background-color: #F7E841;
-    border-radius: 8px;
-    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.15);
+  position: relative;
+  // top: 110px;
+  left: -50px;
+  width: 332px;
+  height: 280px;
+  background-color: #F7E841;
+  border-radius: $gu-1;
+  box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.15);
 }
 
 .bio {
     position: relative;
-    top: -130px;
+    top: -271px;
 }
 
-.dave {
-  color: #0b9a40;
-}
+// .dave {
+//   color: #0b9a40;
+// }
 
-.ubermedia {
-  color: #1c46f2;
-}
+// .ubermedia {
+//   color: #1c46f2;
+// }
 
 
 .social-links-container {
@@ -91,8 +120,8 @@ body {
   height: 30px;
   background-position: center center;
   background-repeat: no-repeat;
-  text-al
 }
+
 .social img {
   height: 100%;
   width: 100%;
@@ -104,6 +133,8 @@ body {
   animation-iteration-count: infinite;
   animation-duration: 8s;
 }
+
+// Animation 
 
 @keyframes wabble {
     0%    {  transform:translate(0, 10px); }
