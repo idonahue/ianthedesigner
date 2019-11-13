@@ -1,0 +1,38 @@
+// Media Queries
+
+// iPhone 6/7/8 Plus
+@media only screen and (max-width: 414px) {
+  .artwork-and-text {
+    min-height: 360px;
+  }
+  .highlight {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+}
+
+
+@media only screen and (max-width: 411px) {
+  .artwork-and-text {
+    min-height: 300px;
+  }
+  .highlight {
+    font-size: 34px;
+    line-height: 1.1;
+  }
+}
+
+// iPhone X
+@media only screen and (max-width: 375px) {
+  .hero-text .greeting {
+    margin-bottom: 14px;
+    font-size: 27px;
+  }
+  .hero-text .highlight {
+    margin-top: 14px;
+  }
+  .highlight {
+    font-size: 33px;
+    line-height: 1.1;
+  }
+}
