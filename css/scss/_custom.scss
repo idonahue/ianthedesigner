@@ -194,21 +194,58 @@ body {
 
 .projects {
   display: flex;
+  justify-content: start;
+  margin-top: 24px;
+  margin-bottom: 24px;
   .project {
-    background-color: $primary;
-    height: 30px;
-    width: 30px;
-    margin-right: 8px;
-    font-weight: bold;
-    font-size: 17px;
-    border-radius: 50%;
-    text-align: center;
-    text-decoration: none;
+    // background-color: $primary;
+    // height: 30px;
+    // width: 30px;
+    // margin-right: 8px;
+    // font-weight: bold;
+    // font-size: 17px;
+    // border-radius: 50%;
+    // text-align: center;
+    // text-decoration: none;
+    // &:hover {
+    //   color: $primary;
+    //   background-color: $black;
+    // }
+    min-width: calc(33% - 26px);
+    min-height: 153px;
+    margin-right: 24px;
+    background-color: white;
+    background-size: contain;
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: 0.5s;
     &:hover {
-      color: $primary;
-      background-color: $black;
-      
+      transform: scale(1.1);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      transition: 0.5s;
     }
+    &.cintric-analyst {
+      background-image: url('../img/projects/cintric/cover-cintric-analyst.png');
+    }
+    &.cintric-heartbeat {
+      background-image: url('../img/projects/cintric/cover-retail-heartbeat.png');
+    }
+    &.cintric-website {
+      background-image: url('../img/projects/cintric/cover-cintric-website.png');
+    }
+    &.compucom-lifecycle-portal {
+      background-image: url('../img/projects/compucom/cover-lifecyce-portal.png');
+    }
+    &.compucom-track-it {
+      background-image: url('../img/projects/compucom/cover-track-it.png');
+    }
+    &.dave-cs-dashboard {
+      background-image: url('../img/projects/dave/cover-dave-cs-managment.png');
+    }
+    &.ubermedia-vista-measurement {
+      background-image: url('../img/projects/ubermedia/cover-vista-measurement.png');
+    }
+
   }  
 }
 
